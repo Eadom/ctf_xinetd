@@ -11,4 +11,3 @@ service ctf
     type        = UNLISTED
     port        = 9999
 }
-}
