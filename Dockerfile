@@ -8,10 +8,8 @@ RUN useradd -m ctf
 COPY ./bin/ /home/ctf/
 COPY ./ctf.xinetd /etc/xinetd.d/ctf
 
-RUN chown root:ctf /home/ctf
-RUN chmod 750 /home/ctf
-RUN chown root:ctf /home/ctf/*
-RUN chmod 750 /home/ctf/*
+RUN chown -R root:ctf /home/ctf
+RUN chmod -R 750 /home/ctf
 RUN chmod 740 /home/ctf/flag
 
 WORKDIR /home/ctf
