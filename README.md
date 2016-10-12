@@ -6,7 +6,9 @@
 
 Put files to floder `bin`. They'll be copied to /home/ctf. **Update the flag** at the same time.
 
-Edit `ctf.xinetd`. replace `server = /home/ctf/helloworld` to your command.
+Edit `ctf.xinetd`. replace `./helloworld` to your command.
+
+You can also edit `Dockerfile, ctf.xinetd, start.sh` to custom your environment.
 
 ## build
 

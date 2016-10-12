@@ -1,13 +1,14 @@
-# change problem to your app
+# replace helloworld to your program
 service ctf
 {
     disable = no
     socket_type = stream
     protocol    = tcp
     wait        = no
-    user        = ctf
+    user        = root
     bind        = 0.0.0.0
-    server      = /home/ctf/helloworld
+    server      = /usr/sbin/chroot
+    server_args = --userspec=1000:1000 /home/ctf ./helloworld
     type        = UNLISTED
     port        = 9999
 }
