@@ -16,6 +16,8 @@ You can also edit `Dockerfile, ctf.xinetd, start.sh` to custom your environment.
 docker build -t "helloworld" .
 ```
 
+DO NOT use *bin* as challenge's name
+
 ## run
 
 ```
